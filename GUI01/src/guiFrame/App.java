@@ -8,6 +8,9 @@ public class App {
         // Create new frame from SimpleFrame
         SimpleFrame window = new SimpleFrame("Hello World");
 
+        // declare grid layout
+         GridLayout grid = new GridLayout(3,3,10,10);
+
         // declare radiobutton group
         ButtonGroup group = new ButtonGroup();
 
@@ -29,7 +32,10 @@ public class App {
         JButton button2 = new JButton("Save");
 
         // set layout from left to right and at the center
-        window.setLayout(new FlowLayout());
+        // window.setLayout(new FlowLayout());
+
+        // set layout by grid
+        window.setLayout(grid);
 
         window.add(label);
         window.add(button1);
